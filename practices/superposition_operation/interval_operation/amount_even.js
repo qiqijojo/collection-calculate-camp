@@ -2,7 +2,11 @@
 
 function amount_even(collection) {
 
-  //在这里写入代码
+  return collection.filter(obj=>{
+    return obj%2===0;
+  }).reduce((init,cur)=>{
+    return init+cur;
+  })
 }
 
 module.exports = amount_even;

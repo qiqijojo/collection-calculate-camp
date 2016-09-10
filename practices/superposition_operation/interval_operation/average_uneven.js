@@ -2,7 +2,13 @@
 
 function average_uneven(collection) {
 
-  //在这里写入代码
+  let oldNum = collection.filter(obj=>{
+    return obj%2!==0;
+  });
+  return oldNum.reduce((init,cur)=>{
+    return init+cur;
+  })/oldNum.length;
+
 }
 
 module.exports = average_uneven;
